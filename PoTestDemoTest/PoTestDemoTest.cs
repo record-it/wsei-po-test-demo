@@ -31,11 +31,11 @@ public class PoTestDemoTest
         //Assert
         if (Math.Abs(result - 3.2) < double.Epsilon * 2)
         {
-            Assert.True(false);
-        } else
-        {
             Assert.True(true);
             CountPoints(1, "Task 1");
+        } else
+        {
+            Assert.True(false);
         }
     }
 
